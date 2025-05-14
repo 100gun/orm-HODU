@@ -8,31 +8,176 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <style></style>
   </head>
   <body>
     <header class="content-header" id="header-top">
-      <h1 class="logo-top"><img src="img/logo.png" alt="HODU" /></h1>
       <div class="wrap-navi">
-        <nav>
+        <h1 class="logo-top">
+          <a href="#"><img src="img/logo.png" alt="HODU" /></a>
+        </h1>
+        <nav class="pc-nav">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Support</a></li>
-            <li><a href="#" class="btn">Download</a></li>
+            <li><a href="#" class="btn btn-secondary">Download</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="wrap-mo-navi">
-        <nav class="moblie-nav" style="display: none">
+        <nav class="mobile-nav" style="display: none">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Support</a></li>
-            <li><a href="#" class="btn">Download</a></li>
+            <li><a href="#" class="btn btn-secondary">Download</a></li>
           </ul>
         </nav>
       </div>
     </header>
+
+    <main class="content-main">
+      <section class="hero">
+        <div class="wrap-hero">
+          <h2 class="title-hero txt-tit">
+            Lorem Ipsum is simply<br />
+            dummy text of the printing and
+          </h2>
+          <p class="txt-hero">
+            Lorem Ipsum is simply dummy text of the printing and<br />
+            typesetting industry.<br />
+            Lorem Ipsum has been the industry's standard dummy text<br />
+            ever since the 1500s, when an unknown
+          </p>
+          <a href="#" class="btn btn-secondary">Download</a>
+        </div>
+      </section>
+
+      <section class="intro">
+        <img
+          class="img-intro"
+          src="img/img_4.jpg"
+          alt="체크무늬 이불 위에 옆으로 누워 어딘가를 바라보는 호두"
+        />
+        <div class="wrap-intro">
+          <h2 class="title-intro txt-tit">
+            Lorem Ipsum is simply <br />
+            dummy text of the printing <br />
+            and dummy text
+          </h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            <br />
+            industry.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <h2 class="tit-gallery txt-tit">
+          dummy text of the printing and dummy
+        </h2>
+        <p class="txt-gallery">
+          Lorem Ipsum is simply <span class="txt-strong">dummy text</span> of
+          the printing and typesetting industry.<br />
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown
+        </p>
+        <div class="img-gallery">
+          <img src="./img/img_1.jpg" alt="캣타워에 올라가있는 호두" />
+          <img
+            src="img/img_2.jpg"
+            alt="하늘색 벽 근처 바닥에 앉아있는 호두의 뒷모습"
+          />
+          <img src="img/img_3.jpg" alt="이불 밖에서 나를 바라보는 호두" />
+        </div>
+        <div class="wrap-gallery">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.<br />
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown<br />
+            Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+      </section>
+
+      <article class="subscribe">
+        <div class="box-subscribe">
+          <h2 class="tit-subscribe txt-tit">Subscribe to our Blog post</h2>
+          <p class="txt-subscribe">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. <br />
+            Lorem Ipsum has been the industry's standard dummy text
+          </p>
+        </div>
+        <form class="subscribe-form">
+          <label class="sr-only" for="input-email">이메일</label>
+          <input
+            type="email"
+            name="useremail"
+            id="input-email"
+            placeholder="Enter your e-mail address"
+          />
+          <button type="submit" class="btn btn-secondary btn-subscribe">
+            Subscribe
+          </button>
+        </form>
+      </article>
+    </main>
+
+    <section class="modal" style="display: none">
+      <div class="modal-wrap">
+        <img
+          class="img-modalhodu"
+          src="./img/cat-subscribe.png"
+          alt="볼이 빨개진 호두"
+        />
+        <h2 class="txt-tnx">Thank you!</h2>
+        <p class="txt-tnx-desc">
+          Lorem Ipsum is simply dummy text of the printing industry.
+        </p>
+
+        <button class="btn btn-secondary btn-lovehodu">OK! I Love HODU</button>
+      </div>
+    </section>
+
+    <footer class="content-footer">
+      <div class="box-footer">
+        <h2>
+          <a><img class="logo-bottom" src="img/logo.png" alt="HODU" /></a>
+        </h2>
+
+        <ul class="sns-link-footer">
+          <li>
+            <a href="#" class="link-blog"
+              ><span class="sr-only">블로그</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-insta"
+              ><span class="sr-only">인스타그램</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-facebook">
+              <span class="sr-only">페이스북</span></a
+            >
+          </li>
+          <li>
+            <a href="#" class="link-youtube"
+              ><span class="sr-only">유튜브</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a href="#header-top" class="btn-gotop"
+      ><span class="sr-only">최상단으로 이동</span>
+    </a>
   </body>
 </html>
