@@ -679,7 +679,7 @@
     padding: 20px 0px 20px 68px;
     margin-bottom: 20px;
 
-    font-size: var(--pc-regular-size);
+    font-size: var(--regular-size);
     border: none;
     border-radius: 60px;
   }
