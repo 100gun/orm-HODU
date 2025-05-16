@@ -29,48 +29,34 @@
 
 /* 기본 설정값 */
 
-:root {
-  /* color */
-  --main-background: #f2e9d8;
-  --point-backgroud: #263140;
-
-  --main-txt-color: #000;
-  --point-txt-color: #d97652;
-  --pointbg-txt-color: #fff;
-
-  --btn-color: #d97652;
-  --btn-txt-color: #fff;
-
-  /* font */
-  --pc-tit-size: 3rem;
-  --pc-regular-size: 1rem;
-  --pc-middle-size: 2.25rem;
-  --pc-btn-size: 1rem;
-
-  --mo-tit-size: 1.5rem;
-  --mo-regular-size: 0.87rem;
-  --mo-btn-size: 0.87rem;
-
-  /* btn */
-  --pc-btn-padding: 15px 29px;
-  --mo-btn-padding: 11px 24px;
-}
-
 html {
-  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
+  color: var(--main-txt-color);
   font-family: "SpoqaHanSansNeo", sans-serif;
+  font-weight: 400;
+  line-height: 100%;
+  box-sizing: border-box;
 }
 
-/* 버튼 스타일 */
-.btn {
-  background-color: var(--btn-color);
-  color: var(--btn-txt-color);
-  border: none;
-  border-radius: 40px;
+p {
+  line-height: 1.4rem;
+}
 
-  font-family: "SpoqaHanSansNeo", sans-serif;
-  font-weight: 700;
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: inherit;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  overflow: visible;
+  cursor: pointer;
 }

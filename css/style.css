@@ -33,6 +33,17 @@
 
 /* PC, 모바일 공통 스타일  */
 
+/* 버튼 스타일 */
+.btn {
+  background-color: var(--btn-color);
+  color: var(--btn-txt-color);
+  border: none;
+  border-radius: 40px;
+
+  font-family: "SpoqaHanSansNeo", sans-serif;
+  font-weight: 700;
+}
+
 .btn-secondary {
   padding: var(--btn-padding);
   font-size: var(--btn-size);
