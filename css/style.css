@@ -166,7 +166,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 902px;
+    height: 798px;
 
     margin-bottom: 80px;
     overflow: hidden;
@@ -189,11 +189,7 @@
   }
 
   .img-boxhodu {
-    transform: translateX(100px) translateY(110px);
-  }
-
-  .content-main {
-    margin-top: -90px;
+    transform: translateX(100px) translateY(75px);
   }
 
   .intro {
