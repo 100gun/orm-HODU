@@ -33,6 +33,9 @@
 
 /* PC, 모바일 공통 스타일  */
 
+.btn {
+  cursor: pointer;
+}
 /* 버튼 스타일 */
 .btn {
   background-color: var(--btn-color);
