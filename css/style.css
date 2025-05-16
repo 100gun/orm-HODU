@@ -130,6 +130,11 @@
   .content-header {
     padding: 20px 40px;
     background-color: var(--main-background);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
   }
 
   .wrap-navi {
