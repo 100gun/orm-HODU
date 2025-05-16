@@ -1,7 +1,7 @@
 /* 모달 숨기기 */
 
 .modal {
-  display: none;
+  /* display: none; */
 }
 
 /* 기본 설정값 */
@@ -25,10 +25,14 @@
   --middle-size: 2.25rem;
   --btn-size: 1rem;
 
-  --mo-tit-size: 2rem;
+  --mo-tit-size: 1.5rem;
+  --mo-regular-size: 0.875rem;
+  --mo-middle-size: 1rem;
+  --mo-btn-size: 0.875rem;
 
   /* btn */
-  --btn-padding: 15px 29px;
+  --btn-padding: 0.93rem 1.8rem;
+  --mo-btn-padding: 0.69rem 1.5rem;
 }
 
 /* PC, 모바일 공통 스타일  */
@@ -42,11 +46,6 @@
 
   font-family: "SpoqaHanSansNeo", sans-serif;
   font-weight: 700;
-}
-
-.btn-secondary {
-  padding: var(--btn-padding);
-  font-size: var(--btn-size);
 }
 
 .content-header {
@@ -78,7 +77,6 @@
   content: "";
   display: block;
   width: 100%;
-  height: 340px;
   margin-top: -100px;
   background: url(../img/img_5.png) center / cover no-repeat;
 }
@@ -130,6 +128,11 @@
   .mo-logo-top,
   .nav-footer {
     display: none;
+  }
+
+  .btn-secondary {
+    padding: var(--btn-padding);
+    font-size: var(--btn-size);
   }
 
   /* header 영역 */
@@ -352,6 +355,10 @@
     padding: 30px 0;
   }
 
+  .content-footer::before {
+    height: 340px;
+  }
+
   .logo-bottom {
     width: 226px;
     height: 70px;
@@ -434,6 +441,10 @@
 @media screen and (max-width: 767px) {
   /* mobile-공통영역 */
 
+  body {
+    padding-top: 76px;
+  }
+
   br,
   .wrap-navi,
   .btn-gotop {
@@ -442,6 +453,11 @@
 
   .break-mobile {
     display: block;
+  }
+
+  .btn-secondary {
+    padding: var(--mo-btn-padding);
+    font-size: var(--mo-btn-size);
   }
 
   /* header 영역 */
@@ -489,10 +505,10 @@
   .wrap-mo-navi {
     position: fixed;
     top: 0;
-    right: -80%;
+    right: -289px;
     z-index: 500;
 
-    width: 80%;
+    width: 289px;
     height: 100vh;
 
     background-color: var(--point-backgroud);
@@ -501,10 +517,10 @@
 
   .mobile-nav button {
     position: absolute;
-    top: 20px;
+    top: 22px;
     left: 20px;
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
     background: url(../img/arrow-right.svg) no-repeat center;
   }
 
@@ -515,15 +531,15 @@
   }
 
   .mo-btn-down {
-    margin: 20px 0 0 20px;
+    margin: 50px 0 0 40px;
   }
 
   .mobile-nav ul li a {
-    padding: 0 30px;
+    padding-left: 50px;
     margin-bottom: 30px;
 
     color: #fff;
-    font-size: 16px;
+    font-size: var(--mo-middle-size);
     font-weight: 700;
   }
 
@@ -541,7 +557,7 @@
     align-items: center;
     position: relative;
 
-    height: 786px;
+    height: 718px;
     margin-bottom: 40px;
 
     background: var(--main-background);
@@ -554,13 +570,14 @@
 
   .txt-hero {
     margin: 30px 0;
+    font-size: var(--mo-regular-size);
   }
 
   .img-boxhodu {
-    width: 200px;
+    width: 197px;
     max-width: 100%;
-    height: auto;
-    margin: 40px auto 0;
+    height: 422px;
+    margin: 30px auto 0;
   }
 
   .wrap-hero {
@@ -594,9 +611,13 @@
     flex-direction: column;
   }
 
+  .wrap-intro p {
+    font-size: var(--mo-regular-size);
+  }
+
   .title-intro {
     margin-bottom: 20px;
-    font-size: var(--middle-size);
+    font-size: var(--mo-tit-size);
   }
 
   .gallery {
@@ -608,13 +629,15 @@
   }
 
   .tit-gallery {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: var(--btn-color);
   }
 
   .txt-gallery {
     margin-bottom: 40px;
     text-align: center;
+
+    font-size: var(--mo-middle-size);
   }
 
   .img-gallery {
@@ -644,6 +667,10 @@
     padding: 32px;
   }
 
+  .wrap-gallery p {
+    font-size: var(--mo-middle-size);
+  }
+
   .subscribe {
     display: flex;
     flex-direction: column;
@@ -654,7 +681,7 @@
     z-index: 10;
 
     margin: 0 32px;
-    padding: 36px 32px;
+    padding: 36px 32px 30px;
 
     color: #fff;
     border-radius: 30px;
@@ -668,12 +695,12 @@
 
   .tit-subscribe {
     margin-bottom: 18px;
-    font-size: var(--middle-size);
+    font-size: var(--mo-tit-size);
   }
 
   .txt-subscribe {
+    font-size: var(--mo-regular-size);
     margin-bottom: 30px;
-    font-size: 14px;
   }
 
   .subscribe-form {
@@ -687,20 +714,22 @@
     overflow: hidden;
     box-sizing: border-box;
 
-    padding: 20px 0px 20px 68px;
+    padding: 12px 0px 12px 48px;
     margin-bottom: 20px;
 
-    font-size: var(--regular-size);
+    font-size: 0.75rem;
     border: none;
     border-radius: 60px;
   }
 
   .subscribe .subscribe-form::before {
-    top: 22%;
-    left: 55px;
+    top: 18%;
+    left: 50px;
 
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
+
+    background-size: cover;
   }
 
   .subscribe .subscribe-form {
@@ -718,15 +747,12 @@
     align-items: center;
   }
 
-  .nav-footer {
-    padding: 30px 0;
+  .content-footer::before {
+    height: 271px;
   }
 
-  .nav-footer-list ul li {
-    display: flex;
-    justify-content: flex-end;
-    gap: 16px;
-    color: #767676;
+  .nav-footer {
+    padding: 30px 0;
   }
 
   /* ul자체에 */
@@ -734,6 +760,15 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .nav-footer-list ul li {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    color: #767676;
+
+    font-size: var(--mo-regular-size);
   }
 
   .box-footer {
@@ -758,6 +793,21 @@
   .content-footer .sns-link-footer a {
     width: 32px;
     height: 32px;
+
+    background-position: 0.44rem 0.43rem;
+    background-size: 18.29px 18.29px;
+  }
+
+  .content-footer .sns-link-footer .link-insta {
+    background-image: url(../img/instagram.svg);
+  }
+
+  .content-footer .sns-link-footer .link-facebook {
+    background-image: url(../img/facebook.svg);
+  }
+
+  .content-footer .sns-link-footer .link-youtube {
+    background-image: url(../img/youtube.svg);
   }
 
   /* 모바일 - modal */
@@ -774,17 +824,17 @@
   }
 
   .txt-tnx {
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 
     color: var(--point-txt-color);
     font-weight: 700;
-    font-size: 24px;
+    font-size: var(--mo-tit-size);
   }
 
   .txt-tnx-desc {
     margin-bottom: 28px;
     text-align: center;
-    font-size: 14px;
+    font-size: var(--mo-regular-size);
   }
 
   .btn-lovehodu {
