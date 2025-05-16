@@ -49,6 +49,13 @@
   font-size: var(--btn-size);
 }
 
+.content-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
 .txt-tit {
   font-weight: 700;
   line-height: normal;
@@ -130,11 +137,6 @@
   .content-header {
     padding: 20px 0;
     background-color: var(--main-background);
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
   }
 
   .wrap-navi {
@@ -142,6 +144,8 @@
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
+
+    padding: 0 20px;
     margin: 0 auto;
   }
 
@@ -446,11 +450,6 @@
     justify-content: center;
     align-items: center;
 
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-
     padding: 24px 0px;
 
     background-color: var(--main-background);
@@ -468,6 +467,8 @@
 
     width: 100%;
     max-width: 768px;
+
+    padding: 0 20px;
   }
 
   .mo-logo-top img {
