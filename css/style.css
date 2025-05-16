@@ -195,7 +195,7 @@
   }
 
   .img-boxhodu {
-    transform: translateX(100px) translateY(75px);
+    transform: translateX(100px) translateY(131px);
   }
 
   .intro {
@@ -348,6 +348,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 35%;
     padding: 30px 0;
   }
 
