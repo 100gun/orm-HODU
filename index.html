@@ -21,7 +21,9 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Support</a></li>
-            <li><a href="#" class="btn btn-secondary">Download</a></li>
+            <li>
+              <a href="#" class="btn btn-secondary pc-btn-down">Download</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -240,29 +242,12 @@
           </nav>
         </div>
       </div>
+      <!-- 상단 이동 top 버튼 -->
+      <a href="#header-top" class="btn-gotop"
+        ><span class="sr-only">최상단으로 이동</span>
+      </a>
     </footer>
 
-    <!-- 상단 이동 top 버튼 -->
-    <a href="#header-top" class="btn-gotop"
-      ><span class="sr-only">최상단으로 이동</span>
-    </a>
-
-    <!-- 햄버거 메뉴 script -->
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuOpenBtn = document.querySelector(".mo-nav-open");
-        const menuCloseBtn = document.querySelector(".mo-nav-close");
-        const mobileMenu = document.querySelector(".wrap-mo-navi");
-
-        //메뉴 열기
-        menuOpenBtn.addEventListener("click", function () {
-          mobileMenu.style.right = "0";
-        });
-        // 메뉴 닫기
-        menuCloseBtn.addEventListener("click", function () {
-          mobileMenu.style.right = "-289px";
-        });
-      });
-    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
   </body>
 </html>

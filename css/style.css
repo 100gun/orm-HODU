@@ -1,7 +1,7 @@
 /* 모달 숨기기 */
 
 .modal {
-  /* display: none; */
+  display: none;
 }
 
 /* 기본 설정값 */
@@ -21,9 +21,9 @@
 
   /* font */
   --pc-tit-size: 3rem;
-  --regular-size: 1rem;
-  --middle-size: 2.25rem;
-  --btn-size: 1rem;
+  --pc-regular-size: 1rem;
+  --pc-middle-size: 2.25rem;
+  --pc-btn-size: 1rem;
 
   --mo-tit-size: 1.5rem;
   --mo-regular-size: 0.875rem;
@@ -31,7 +31,7 @@
   --mo-btn-size: 0.875rem;
 
   /* btn */
-  --btn-padding: 0.93rem 1.8rem;
+  --pc-btn-padding: 0.93rem 1.8rem;
   --mo-btn-padding: 0.69rem 1.5rem;
 }
 
@@ -58,6 +58,14 @@
 .txt-tit {
   font-weight: 700;
   line-height: normal;
+}
+
+.wrap-txt-hero p,
+.wrap-intro p,
+.txt-gallery,
+.wrap-gallery,
+.subscribe .subscribe-form input {
+  font-size: var(--pc-regular-size);
 }
 
 .txt-strong {
@@ -105,8 +113,6 @@
   transform: translate(-50%, -50%);
   z-index: 100;
 
-  height: auto;
-
   border-radius: 30px;
   background: url(../img/modal-bg-img.png) top / cover no-repeat;
   box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.25);
@@ -131,8 +137,12 @@
   }
 
   .btn-secondary {
-    padding: var(--btn-padding);
-    font-size: var(--btn-size);
+    padding: var(--pc-btn-padding);
+    font-size: var(--pc-btn-size);
+  }
+
+  .pc-btn-down {
+    margin-left: 10px;
   }
 
   /* header 영역 */
@@ -225,7 +235,7 @@
   }
 
   .title-intro {
-    font-size: var(--middle-size);
+    font-size: var(--pc-middle-size);
     margin-bottom: 30px;
   }
 
@@ -256,7 +266,7 @@
     gap: 3%;
     width: 100%;
 
-    margin-bottom: 60px;
+    margin-bottom: 90px;
   }
 
   .img-gallery img {
@@ -290,7 +300,8 @@
     z-index: 10;
 
     margin: 0 auto;
-    padding: 50px 58px;
+    padding: 50px 58px 30px 58px;
+    /* bottom 반응형으로 인해 -20px */
 
     color: #fff;
     border-radius: 30px;
@@ -304,7 +315,7 @@
   }
 
   .tit-subscribe {
-    font-size: var(--middle-size);
+    font-size: var(--pc-middle-size);
     margin-bottom: 18px;
   }
 
@@ -327,7 +338,6 @@
 
     padding: 20px 0px 20px 68px;
 
-    font-size: var(--regular-size);
     border: none;
     border-radius: 60px;
   }
@@ -347,12 +357,21 @@
     transform: translateY(-50%);
   }
 
+  .wrap-footer {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
   .box-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 35%;
-    padding: 30px 0;
+    padding: 45px 30px;
+  }
+
+  .content-footer {
+    position: relative;
   }
 
   .content-footer::before {
@@ -389,13 +408,14 @@
   /* 상단 이동 top 버튼 */
 
   .btn-gotop {
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    z-index: 11;
+    position: absolute;
 
     right: 24px;
     bottom: 185px;
+
+    width: 50px;
+    height: 50px;
+    z-index: 11;
 
     border: 1px solid #c4c4c4;
     border-radius: 50%;
@@ -410,6 +430,7 @@
 
   .modal {
     width: 600px;
+    height: 400px;
   }
 
   .img-modalhodu {
@@ -423,16 +444,16 @@
 
     color: var(--point-txt-color);
     font-weight: 700;
-    font-size: var(--middle-size);
+    font-size: var(--pc-middle-size);
   }
 
   .txt-tnx-desc {
-    margin-bottom: 53px;
+    margin-bottom: 38px;
     font-size: 14px;
   }
 
   .btn-lovehodu {
-    margin-bottom: 55px;
+    margin-bottom: 40px;
   }
 }
 
@@ -814,6 +835,7 @@
 
   .modal {
     width: 300px;
+    height: 300px;
     box-shadow: 0px 0px 30px 0px #00000033;
   }
 
