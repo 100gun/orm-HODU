@@ -14,16 +14,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//모달  스크립트
-const modal = document.querySelector(".modal");
-const subscribeBtn = document.querySelector(".btn-subscribe");
+// 모달 스크립트
 
-subscribeBtn.addEventListener("click", function (e) {
-  e.preventDefault();
-  modal.style.display = "block";
-});
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".subscribe-form");
+  const emailInput = document.querySelector("#input-email");
+  const modal = document.querySelector(".modal");
+  const modalCloseBtn = document.querySelector(".btn-lovehodu");
 
-const modalCloseBtn = document.querySelector(".btn-lovehodu");
-modalCloseBtn.addEventListener("click", function () {
-  modal.style.display = "none";
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (emailInput.value && emailInput.validity.valid) {
+      modal.showModal();
+      form.reset();
+    } else {
+      emailInput.focus();
+    }
+  });
+
+  modalCloseBtn.addEventListener("click", function () {
+    modal.close();
+  });
 });
